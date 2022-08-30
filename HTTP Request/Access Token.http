@@ -1,0 +1,11 @@
+# curl --request POST "https://iam.bimdata.io/auth/realms/bimdata/protocol/openid-connect/token"
+#  --header "Content-Type: application/x-www-form-urlencoded"
+#  --data "grant_type=client_credentials&client_id=YOUR_CLIENT_ID&client_secret=YOUR_CLIENT_SECRET"
+POST https://iam.bimdata.io/auth/realms/bimdata/protocol/openid-connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=client_credentials&client_id=a89baab7-98ae-44da-a95c-ece8e82ce33e&client_secret=4ff1b4d631ea2492f9c6ede9859d4b80424aa7bdbec01eccbf13fdc1
+
+###
+
+
