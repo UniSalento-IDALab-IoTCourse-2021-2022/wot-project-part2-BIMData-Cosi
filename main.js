@@ -40,7 +40,7 @@ const accesstoken = "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI1Ql9OOGk
 
 const rssi_chart={
     name:"rssi_chart",
-    template:`<div style="height: 100%;
+    template:`<div style="height: 90%;
 				display: flex;
 				justify-content:center;
 				align-items:center;">
@@ -55,7 +55,10 @@ const initplugin={
         onClick() {
             let value = document.getElementById("Partition").value
             if(value!=="") {
-                Init(value)
+                if (document.getElementById("OldData").checked)
+                    Init(value,"beginning")
+                else if(document.getElementById("NewData").checked)
+                    Init(value,"end")
             }
         },
         onClick2(){
@@ -64,9 +67,13 @@ const initplugin={
     },
     template: `
       <div>
-        <span>Insert misuration n.</span>
+        <span>Measurement n.</span>
         <input type="text" id="Partition" value="" size="5" maxlength="2">
-        <button type="button" @click="onClick">Click to start plugin</button>
+        <input type="checkbox" id="NewData" name="new" value="">
+        <label for="NewData"> New data</label>
+        <input type="checkbox" id="OldData" name="old" value="">
+        <label for="OldData"> Old data</label>
+        <button type="button" @click="onClick">Click start plugin</button>
         <button type="button" @click="onClick2">Click destroy plugin</button>
       </div>`,
 }
