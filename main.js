@@ -1,5 +1,5 @@
 // Configure token
-const accesstoken = "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI1Ql9OOGk4MnlCUWZkZnVfenByMGIyQ1Rfc21jV21kZDkzSTFQRGJXTkIwIn0.eyJleHAiOjE2NjI5OTQ4NzEsImlhdCI6MTY2Mjk5MTI3MSwianRpIjoiZDE2ZDA3YjMtMGEyOC00MThhLTljYzUtMjM4ZjU3ODVhMjQ2IiwiaXNzIjoiaHR0cHM6Ly9pYW0uYmltZGF0YS5pby9hdXRoL3JlYWxtcy9iaW1kYXRhIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6ImIyOTU2ZDNiLTBlMWEtNDk4OS04NTQ4LWQzYzMxYjkyNzdiMCIsInR5cCI6IkJlYXJlciIsImF6cCI6ImE4OWJhYWI3LTk4YWUtNDRkYS1hOTVjLWVjZThlODJjZTMzZSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cDovL2xvY2FsaG9zdDo4MDgwIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsImRlZmF1bHQtcm9sZXMtYmltZGF0YSIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJjaGVjazpyZWFkIG1vZGVsOnRva2VuX21hbmFnZSB3ZWJob29rOm1hbmFnZSBkb2N1bWVudDpyZWFkIGNsb3VkOm1hbmFnZSB1c2VyOnJlYWQgZG9jdW1lbnQ6d3JpdGUgb3JnOm1hbmFnZSBwcm9maWxlIG1vZGVsOnJlYWQgZW1haWwgY2hlY2s6d3JpdGUgbW9kZWw6d3JpdGUgY2xvdWQ6cmVhZCIsImNsaWVudElkIjoiYTg5YmFhYjctOThhZS00NGRhLWE5NWMtZWNlOGU4MmNlMzNlIiwiY2xpZW50SG9zdCI6IjE1MS40NS4yMzYuMTIwIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtYTg5YmFhYjctOThhZS00NGRhLWE5NWMtZWNlOGU4MmNlMzNlIiwiY2xpZW50QWRkcmVzcyI6IjE1MS40NS4yMzYuMTIwIn0.bH06dR9CWU49sXyFWir47napJdbjvyBYRC93KLSlQk7BC7LDFc6gz22Pcg_PdDif9-JWKDUTTZ51hTe7RNJpk_afr8yoFO_DPmFbnEfu4K8AUhH4eCepHHIahsn6ctiVqOqCbkkc_agsijUsjGIyO6_Eez0pnEk386F5fI0ZE8P_8ZMTDkE_q273p0sAuB8FEvYboGO8eOnN_MPVNMJxUFZoQLWpNRHvFG_u59swSClts4xfnUpwtVSZPpWqoFdL_uuQ2nFUnxbE8kp3y22ragkAwJoZHD3dq_Sw4YqRYtCwvMQ7s-i0bsQWNlJ7VpjYlhu-Do-HSgXPFCddfZV4Sw"
+const accesstoken = "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI1Ql9OOGk4MnlCUWZkZnVfenByMGIyQ1Rfc21jV21kZDkzSTFQRGJXTkIwIn0.eyJleHAiOjE2NjMyMzMxNjQsImlhdCI6MTY2MzIyOTU2NCwianRpIjoiNGM2NTM4ZWEtZDRhNy00NzMwLTg3ODItNDViNDZiYTE4MGYyIiwiaXNzIjoiaHR0cHM6Ly9pYW0uYmltZGF0YS5pby9hdXRoL3JlYWxtcy9iaW1kYXRhIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6ImIyOTU2ZDNiLTBlMWEtNDk4OS04NTQ4LWQzYzMxYjkyNzdiMCIsInR5cCI6IkJlYXJlciIsImF6cCI6ImE4OWJhYWI3LTk4YWUtNDRkYS1hOTVjLWVjZThlODJjZTMzZSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cDovL2xvY2FsaG9zdDo4MDgwIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsImRlZmF1bHQtcm9sZXMtYmltZGF0YSIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJjaGVjazpyZWFkIG1vZGVsOnRva2VuX21hbmFnZSB3ZWJob29rOm1hbmFnZSBkb2N1bWVudDpyZWFkIGNsb3VkOm1hbmFnZSB1c2VyOnJlYWQgZG9jdW1lbnQ6d3JpdGUgb3JnOm1hbmFnZSBwcm9maWxlIG1vZGVsOnJlYWQgZW1haWwgY2hlY2s6d3JpdGUgbW9kZWw6d3JpdGUgY2xvdWQ6cmVhZCIsImNsaWVudElkIjoiYTg5YmFhYjctOThhZS00NGRhLWE5NWMtZWNlOGU4MmNlMzNlIiwiY2xpZW50SG9zdCI6IjE1MS40NS4yMzYuMTIwIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtYTg5YmFhYjctOThhZS00NGRhLWE5NWMtZWNlOGU4MmNlMzNlIiwiY2xpZW50QWRkcmVzcyI6IjE1MS40NS4yMzYuMTIwIn0.MjTZdb-SaWn47C35HkPFDnKJHaDkFH1-5J7bGm9w92EUY-zRZCsMSUufRzWA_SZE3zivkBfyhs27LzSHueAM1W8zfQn-txpQDe-fsCwUaytYWxxxBrkgmHpgqmXmxHjTfDGXJNYFccJqScRzEhKgII7XovMXq9mVLZqFiLcDamm2KdxxEoe1-vAiT99ghd6SuGFQTgzVwdGs1VBbJPkOrWDCHgnIWxViZcND3JfQ1vHjlN2OIEEw8SZbRW8yYxsS2voNTqcBCPiqz5pBDUVdjWE6F7ZdOWbU8BLYx51aEXsoi3nQyQYQkELIlyvTc9wpPO87Lglelfx6XnlgNIoSAA"
     const viewer = makeBIMDataViewer({
     logger: {
         level: "INFO"
@@ -10,9 +10,9 @@ const accesstoken = "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI1Ql9OOGk
         windowManager:false
     },
     api: {
-        ifcIds: [44244],
+        ifcIds: [45742],
         cloudId: 17709,
-        projectId: 437580,
+        projectId: 441518,
         accessToken: accesstoken},
     plugins: {
         bcf: false,
@@ -54,12 +54,18 @@ const initplugin={
     methods: {
         onClick() {
             let value = document.getElementById("Partition").value
+            let olddata = document.getElementById("OldData").checked
+            let newdata=document.getElementById("NewData").checked
             if(value!=="") {
-                if (document.getElementById("OldData").checked)
+                if (olddata===true&&newdata===false)
                     Init(value,"beginning")
-                else if(document.getElementById("NewData").checked)
+                else if(newdata===true&&olddata===false)
                     Init(value,"end")
+                else
+                    window.alert("check the box with old or new data")
             }
+            else
+                window.alert("insert number of the measurement")
         },
         onClick2(){
             Destroy()
@@ -75,7 +81,8 @@ const initplugin={
         <label for="OldData"> Old data</label>
         <button type="button" @click="onClick">Click start plugin</button>
         <button type="button" @click="onClick2">Click destroy plugin</button>
-      </div>`,
+      </div>
+    `,
 }
 
 // Create and register plugins
