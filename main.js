@@ -1,9 +1,6 @@
 // Configure token
-const accesstoken = "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI1Ql9OOGk4MnlCUWZkZnVfenByMGIyQ1Rfc21jV21kZDkzSTFQRGJXTkIwIn0.eyJleHAiOjE2NjMyMzMxNjQsImlhdCI6MTY2MzIyOTU2NCwianRpIjoiNGM2NTM4ZWEtZDRhNy00NzMwLTg3ODItNDViNDZiYTE4MGYyIiwiaXNzIjoiaHR0cHM6Ly9pYW0uYmltZGF0YS5pby9hdXRoL3JlYWxtcy9iaW1kYXRhIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6ImIyOTU2ZDNiLTBlMWEtNDk4OS04NTQ4LWQzYzMxYjkyNzdiMCIsInR5cCI6IkJlYXJlciIsImF6cCI6ImE4OWJhYWI3LTk4YWUtNDRkYS1hOTVjLWVjZThlODJjZTMzZSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cDovL2xvY2FsaG9zdDo4MDgwIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsImRlZmF1bHQtcm9sZXMtYmltZGF0YSIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJjaGVjazpyZWFkIG1vZGVsOnRva2VuX21hbmFnZSB3ZWJob29rOm1hbmFnZSBkb2N1bWVudDpyZWFkIGNsb3VkOm1hbmFnZSB1c2VyOnJlYWQgZG9jdW1lbnQ6d3JpdGUgb3JnOm1hbmFnZSBwcm9maWxlIG1vZGVsOnJlYWQgZW1haWwgY2hlY2s6d3JpdGUgbW9kZWw6d3JpdGUgY2xvdWQ6cmVhZCIsImNsaWVudElkIjoiYTg5YmFhYjctOThhZS00NGRhLWE5NWMtZWNlOGU4MmNlMzNlIiwiY2xpZW50SG9zdCI6IjE1MS40NS4yMzYuMTIwIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtYTg5YmFhYjctOThhZS00NGRhLWE5NWMtZWNlOGU4MmNlMzNlIiwiY2xpZW50QWRkcmVzcyI6IjE1MS40NS4yMzYuMTIwIn0.MjTZdb-SaWn47C35HkPFDnKJHaDkFH1-5J7bGm9w92EUY-zRZCsMSUufRzWA_SZE3zivkBfyhs27LzSHueAM1W8zfQn-txpQDe-fsCwUaytYWxxxBrkgmHpgqmXmxHjTfDGXJNYFccJqScRzEhKgII7XovMXq9mVLZqFiLcDamm2KdxxEoe1-vAiT99ghd6SuGFQTgzVwdGs1VBbJPkOrWDCHgnIWxViZcND3JfQ1vHjlN2OIEEw8SZbRW8yYxsS2voNTqcBCPiqz5pBDUVdjWE6F7ZdOWbU8BLYx51aEXsoi3nQyQYQkELIlyvTc9wpPO87Lglelfx6XnlgNIoSAA"
+const accesstoken = "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI1Ql9OOGk4MnlCUWZkZnVfenByMGIyQ1Rfc21jV21kZDkzSTFQRGJXTkIwIn0.eyJleHAiOjE2NjQ4MTE5NTgsImlhdCI6MTY2NDgwODM1OCwianRpIjoiOTI4Mzc0NTgtOThiYy00ZjYwLTg3ZTUtM2FkOGM2NGQ4Y2NkIiwiaXNzIjoiaHR0cHM6Ly9pYW0uYmltZGF0YS5pby9hdXRoL3JlYWxtcy9iaW1kYXRhIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6ImIyOTU2ZDNiLTBlMWEtNDk4OS04NTQ4LWQzYzMxYjkyNzdiMCIsInR5cCI6IkJlYXJlciIsImF6cCI6ImE4OWJhYWI3LTk4YWUtNDRkYS1hOTVjLWVjZThlODJjZTMzZSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cDovL2xvY2FsaG9zdDo4MDgwIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsImRlZmF1bHQtcm9sZXMtYmltZGF0YSIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJjaGVjazpyZWFkIG1vZGVsOnRva2VuX21hbmFnZSB3ZWJob29rOm1hbmFnZSBkb2N1bWVudDpyZWFkIGNsb3VkOm1hbmFnZSB1c2VyOnJlYWQgZG9jdW1lbnQ6d3JpdGUgb3JnOm1hbmFnZSBwcm9maWxlIG1vZGVsOnJlYWQgZW1haWwgY2hlY2s6d3JpdGUgbW9kZWw6d3JpdGUgY2xvdWQ6cmVhZCIsImNsaWVudElkIjoiYTg5YmFhYjctOThhZS00NGRhLWE5NWMtZWNlOGU4MmNlMzNlIiwiY2xpZW50SG9zdCI6IjE1MS40NS4yMzYuMTIwIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtYTg5YmFhYjctOThhZS00NGRhLWE5NWMtZWNlOGU4MmNlMzNlIiwiY2xpZW50QWRkcmVzcyI6IjE1MS40NS4yMzYuMTIwIn0.jtPEdO-MArGwPEfYB5dvPU37yNallXimKZXsR5gV-AWAemiQB9V8wUeb8lO9EvvNzmvizQ4p3SuEgCFSWJ8RNUxB3rPMGRRltRmo_JumSEHHM0wMEcbflNKXgFGPgbypqL1ajcoJy2Tgm8DBQbZLCkAexnFGl7d7Tum7HfQGRjaCxK9tB4OCZW1cBLt7dcW3gDfCFWvDftzMKETWUdQv0BLWlcoKpzYM5cWPbXBNByYUfiw_Gg3ZnxB14m2L7cQ5zdPutHdbRAdcWLLuVCXUGfp-GFmJwvlUsnkLf5IzlNPgZKdIfKcyb7LpAVsw5dquWzMnZgRs-NSlKDF4E8GpTw"
     const viewer = makeBIMDataViewer({
-    logger: {
-        level: "INFO"
-    },
     ui: {
         contextMenu: false,
         headerVisible: false,
@@ -15,19 +12,18 @@ const accesstoken = "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI1Ql9OOGk
         projectId: 441518,
         accessToken: accesstoken},
     plugins: {
-        bcf: false,
-        "structure-properties": true,
+        "viewer2d-parameters": true,
         fullscreen: true,
+        "structure-properties": true,
+        bcf: false,
         section: false,
         search: false,
         projection: false,
-        viewer2d:true,
-        "viewer2d-parameters": true,
+        viewer2d: true,
         measure2d: false,
         "viewer2d-screenshot": false,
         viewer3d: {
-            navCube: true,
-            edges: true,
+            edges: false,
             enableOffsets: true,
         },
     },
@@ -92,14 +88,14 @@ viewer.registerPlugin({
 });
 
 viewer.registerPlugin({
-    name:"button_plugin",
+    name:"init_plugin",
     component: initplugin
 })
 
 // Create and register windows
 const window1 = {
     name: "window1",
-    plugins: ["button_plugin","plugin_rssi"],
+    plugins: ["init_plugin","plugin_rssi"],
 };
 
 viewer.registerWindow(window1);

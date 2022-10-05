@@ -1,7 +1,6 @@
 {
   "dependencies": {
     "@bimdata/viewer": "^1.9.0-alpha.synchroplan.1.0",
-    "http-proxy": "^1.18.1",
-    "proxy-from-env": "^1.1.0"
+    "cors-anywhere": "^0.4.4"
   }
 }

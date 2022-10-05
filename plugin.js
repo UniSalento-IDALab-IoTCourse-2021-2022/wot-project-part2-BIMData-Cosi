@@ -25,7 +25,7 @@ async function assign_topic(partition,datas){
     let data= `{
   "partitions": [
     {
-      "topic": "RSSI",
+      "topic": "zi76opth-RSSI",
       "partition": ${partition}
     }
   ]
@@ -133,8 +133,9 @@ async function Init(partition,data){
 
 }
 
-//destroy chart
+
 function Destroy(){
+    //destroy chart
     myChart.destroy()
 
     //delete consumer
